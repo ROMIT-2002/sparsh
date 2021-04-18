@@ -1,0 +1,112 @@
+/* Navigation*/
+
+#navbar{
+    flex-direction: column;
+}
+#navbar ul{
+    flex-direction: column;
+    text-align: center;
+}
+
+/* Home */
+ #home{
+height: 370px;
+padding: 3px 169px;
+
+} 
+ #home::before{
+height: 670px;
+
+} 
+#home p{
+    display: none;
+}
+
+#home h1 {
+    color: #ff4800;
+    text-align: center;
+    font-family: "Baloo Bhai 2", cursive;
+    margin-top: 20px;
+    font-weight: bolder;
+    font-size: 1.9rem !important;
+  }
+/* Gallery */
+
+#gallery .box{
+    flex-direction: column;
+    width: 200px;
+}
+#gallery .box img{
+    width: 200px;
+}
+#gallery p{
+    margin: 200px;
+    display: none;}
+
+
+
+
+
+/* Sponsors */
+
+#clients{
+    flex-wrap: wrap;
+}
+#clients img{
+  height: 70px;
+}
+
+.client-item{
+    padding: 25px;
+}
+
+/* Contact Us */
+
+#email{
+    display: none;
+}
+.cred{
+    display: none;
+}
+#myname{
+    font-size: 12px;
+}
+#contact img{
+    height: 150px;
+    margin:10px;
+}
+
+/* Footer */
+footer{
+    display: none;
+}
+
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 1.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

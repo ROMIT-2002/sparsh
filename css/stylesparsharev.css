@@ -1,0 +1,335 @@
+/* CSS Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* CSS Variables */
+:root {
+  --navbar-height: 50px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+
+
+/*Navigation Bar: Logo and Image */
+#logo {
+  margin: 4px 15px;
+  height: 122px;
+}
+
+#logo img {
+  height: 154px;
+  margin: -1px -34px;
+  animation-name: logosize;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+/* Animation of Logo */
+
+
+
+@keyframes logosize {
+  from {
+    height: 104px;
+    margin: -1px -34px;
+  }
+  to {
+    height: 154px;
+    margin: -1px -34px;
+  }
+}
+
+/*Navigation Bar: List Styling */
+
+
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 5;
+  
+
+}
+
+#navbar ul {
+  display: flex;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.8rem;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 4px 40px;
+  border-radius: 40px;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+#navbar ul li a:hover,
+a:visited {
+  display: block;
+  padding: 4px 40px;
+  border-radius: 4000px;
+  text-decoration: none;
+  color: red;
+  background-color: white;
+  transition: background-color 1s ease-in;
+  transition: color 0.3s ease-in;
+}
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 175px;
+  align-items: center;
+  justify-content: center;
+  height: 570px;
+}
+
+#home::before {
+  content: "";
+  background: url("../img/child_study_1.jpg") no-repeat center center/cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.95;
+  left: 0px;
+  top: 0px;
+  opacity: 0.9;
+}
+
+#home h1 {
+  color: #ffd400;
+  text-align: center;
+  font-family: "Baloo Bhai 2", cursive;
+  margin-top: -41px;
+}
+
+#home p {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+  /* margin: 15px; */
+  margin-top: 50px;
+}
+#p2 {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+  margin: 20px;
+}
+
+/* Utility Classes */
+
+.h-primary {
+  font-size: 3.2rem;
+  padding: 12px;
+  font-family: "Bree Serif", serif;
+}
+.h-secondary {
+  font-size: 1.8rem;
+  padding: 12px;
+  /* font-family: "Baloo Bhai 2", cursive; */
+  font-family: "Bree Serif", serif;
+}
+
+.center {
+  text-align: center;
+}
+
+/* Button Styling */
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0.534);
+  color: white;
+  border-radius: 1000px;
+  font-size: 1.4rem;
+  font-family: "Bree Serif", serif;
+  margin-top: 60px;
+}
+
+.btn:hover {
+  background-color: black;
+  cursor: pointer;
+  color: yellow;
+  transition: background-color 0.5s ease-out;
+}
+.btn a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn a:hover {
+  text-decoration: none;
+  color: yellow;
+  transition: color 0.5s ease-in;
+}
+
+/* LinkedIn Styling */
+
+#linkedin {
+  color: white;
+  position: absolute;
+  right: 45px;
+  top: 52px;
+}
+
+/* .fa fa-linkedin-square:hover{
+    color: red;
+} */
+
+/* Services Section */
+
+#gallery {
+  margin: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#gallery .box {
+    border: 3px solid rgb(238, 182, 182);
+    border-radius: 30px;
+    margin: 6px 15px;
+    padding: 34px;
+    background-color: rgb(247, 243, 220);
+    width: 300px;
+    height: 370px;
+    justify-content: center;
+    align-items: center;
+    /* box-sizing: content-box; */
+}
+
+#gallery .box:active{
+    transform: scale(1.5);
+}
+
+#gallery .box:hover{
+    cursor: pointer;
+}
+
+#gallery .box img{
+    margin: auto;
+    display: block;
+    height: 200px;
+}
+
+/* volunteer-section */
+
+#sponsor{
+    height: 440px;
+}
+
+#sponsor::before{
+content: "";
+position: absolute;
+background: url("../img/Africa_girl_bg_1.jpg");
+width: 100%;
+height: 66%;
+z-index: -1;
+opacity: 0.4;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+  height: 150px;
+}
+
+.client-item{
+    padding: 40px;
+}
+
+/* Contact Us */
+
+#contact{
+    height: 500px;
+}
+
+#contact::before{
+    content: "";
+position: absolute;
+background: url("../img/pexels-artem-beliaikin-1153976_1.jpg") no-repeat;
+width: 100%;
+height: 124%;
+z-index: -1;
+opacity: 0.6;
+}
+
+#contact img{
+    height: 150px;
+    margin:25px;
+}
+
+#me{
+    display: flex;
+    justify-content:left;
+    align-items:center;
+    /* border: 2px solid red; */
+    margin: 37px;
+}
+#names{
+    text-align: center;
+    margin:22px;
+}
+
+#email{
+    font-size: 1.1rem;
+    font-family: cursive;
+}
+
+#me .cred{
+    text-align: center;
+    position: absolute;
+    right: 20px;
+}
+#myname{
+    font-family: "Bree Serif", serif;
+}
+
+/* Footer */
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    position: absolute;
+    bottom: 0px;
+}
+
+
+
+
+
+
+
+
